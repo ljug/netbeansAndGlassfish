@@ -81,6 +81,13 @@ public class PayementlogFacadeREST extends AbstractFacade<Payementlog> {
     public String countREST() {
         return String.valueOf(super.count());
     }
+    
+    @POST
+    @Path("countp")
+    @Produces("text/plain")
+    public String countPost() {
+        return String.valueOf(super.count());
+    }
 
     @Override
     protected EntityManager getEntityManager() {
